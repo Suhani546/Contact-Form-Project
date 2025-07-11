@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+Contact Manager Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🚀 Live Demo
 
-## Available Scripts
+Visit Here: https://contactformsuhani.netlify.app
 
-In the project directory, you can run:
+📌 Overview
 
-### `npm start`
+This is a responsive and user-friendly Contact Management Web App built using React. It allows users to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Add new contacts
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+View a list of contacts
 
-### `npm test`
+Edit existing contacts
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Delete contacts
 
-### `npm run build`
+Search through contacts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+All contact data is stored locally in the browser using localStorage.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🛠️ Tech Stack Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React.js – Component-based UI framework
 
-### `npm run eject`
+Tailwind CSS – Utility-first CSS framework for styling
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+react-hook-form – Lightweight form validation and management
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+lucide-react – Icon library for intuitive UI actions (edit, delete)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+uuid – To generate unique IDs for each contact
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+localStorage – For persistent storage of contact records
 
-## Learn More
+📽️ Features Demonstrated in the Video
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Create a Record
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Click on Add Contact
 
-### Code Splitting
+Fill the form and hit Save Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The contact will be added to the list
 
-### Analyzing the Bundle Size
+2. Display a Record
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contacts are shown in card format with name, email, phone, and address
 
-### Making a Progressive Web App
+3. Update a Record
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Click the ✏️ Edit icon on any contact card
 
-### Advanced Configuration
+The form appears with existing values filled in
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Edit values and click Update Contact
 
-### Deployment
+4. Delete a Record
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Click the 🗑️ Delete icon to remove a contact
 
-### `npm run build` fails to minify
+5. Search Functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Type in the search bar to filter contacts by name
+
+🎯 Why This Stack?
+
+React provides modular UI components with fast rendering
+
+Tailwind makes it easy to design clean, modern UIs without writing custom CSS
+
+react-hook-form is lightweight and makes form validation seamless
+
+lucide-react offers elegant, modern icons for UI actions
+
+localStorage ensures the data remains persistent across sessions without backend
+
+⚠️ Challenges Faced
+
+Editing vs Creating: Maintaining different states for add and edit was tricky. Solved using a conditional initialValues prop and reset() method from react-hook-form.
+
+Form Reset on Cancel/Edit: Ensured form values reset on new entry or edit mode.
+
+Persistent Storage: Used useEffect to sync contact state with localStorage reliably.
+
+✅ How to Use Locally
+
+Clone the repository
+
+Run npm install
+
+Run npm start
+
+Open http://localhost:3000 in your browser
