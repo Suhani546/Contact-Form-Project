@@ -1,10 +1,10 @@
-Contact Manager Web App
+#### Contact Manager Web App
 
-🚀 Live Demo
+### 🚀 Live Demo
 
 Visit Here: https://contactformsuhani.netlify.app
 
-📌 Overview
+## 📌 Overview
 
 This is a responsive and user-friendly Contact Management Web App built using React. It allows users to:
 
@@ -20,7 +20,7 @@ Search through contacts
 
 All contact data is stored locally in the browser using localStorage.
 
-🛠️ Tech Stack Used
+## 🛠️ Tech Stack Used
 
 React.js – Component-based UI framework
 
@@ -34,7 +34,7 @@ uuid – To generate unique IDs for each contact
 
 localStorage – For persistent storage of contact records
 
-📽️ Features Demonstrated in the Video
+## 📽️ Features Demonstrated in the Video
 
 1. Create a Record
 
@@ -64,7 +64,7 @@ Click the 🗑️ Delete icon to remove a contact
 
 Type in the search bar to filter contacts by name
 
-🎯 Why This Stack?
+## 🎯 Why This Stack?
 
 React provides modular UI components with fast rendering
 
@@ -84,7 +84,7 @@ Form Reset on Cancel/Edit: Ensured form values reset on new entry or edit mode.
 
 Persistent Storage: Used useEffect to sync contact state with localStorage reliably.
 
-✅ How to Use Locally
+## ✅ How to Use Locally
 
 Clone the repository
 
